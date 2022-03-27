@@ -1,0 +1,149 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+$primary : $gray-800;
+$secondary : $gray-400;
+$nav : $purple-800;
+
+#preloader{
+    background: white url(../assets/Spinner-5.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background-color:$nav;
+}
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+ }
+ .bgcolor.scrolled.navbar-toggler{
+    background-color: $primary;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: white;
+    z-index: 1000;
+ }
+ #offcanvasExample{
+    
+ }
+ .offcanvas{
+     width: 250px;
+     font-family: 'Lato', sans-serif;
+     
+ }
+ .offcanvas-body{
+    background-color: #adb5bd;
+ }
+.im{
+    float:left;
+    margin-left: 40px;
+    z-index: 99;
+}
+.imd{
+    position: absolute;
+    top: 100px;
+    
+}
+.navbar-toggler
+{
+    border: 0;
+    float: right;
+    margin-right: 40px;
+    padding: 10px;
+    z-index: 99;
+    color: $teal-500;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+.middle{
+    margin: 5px auto;
+}
+.navbar-toggler .top
+{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    
+}
+
+.navbar-toggler .end
+{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .end{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon
+{
+    background-color: white;
+}
+.offcanvas-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.addcol{
+    
+    background-color: blue;
+    color: white;
+}
+.nav-item:hover{
+    color: blue;
+}
+
+.nav-item a:after{
+    z-index: -1;
+    position:absolute;
+    left:0%;
+    width:0;
+    height: 30px;
+
+    background: cadetblue;
+    content: '';
+    transition: width 0.35s ease-in-out;
+}
+.nav-item a:hover:after{
+    width: 100%;
+    color: white;
+}
+.footer{
+    font-family: 'Josefin Sans', sans-serif;
+}
