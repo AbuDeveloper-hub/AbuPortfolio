@@ -10,7 +10,7 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'AbuDeveloper';
+  title = 'AbuPortfolio';
 
   home="assets/home1.png"
   primage = "assets/Spinner-5.gif"
