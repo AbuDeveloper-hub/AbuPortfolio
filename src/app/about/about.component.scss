@@ -11,7 +11,7 @@
             ul.timeline {
                 list-style-type: none;
                 position: relative;
-                width: 300px;
+                width: 400px;
             }
             ul.timeline:before {
                 content: ' ';
@@ -60,6 +60,11 @@
     }
     .s1{
       font-size: 5px;
+    }
+    ul.timeline {
+     list-style-type: none;
+                position: relative;
+                width: 250px;
     }
 }
 
