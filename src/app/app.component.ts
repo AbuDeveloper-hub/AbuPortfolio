@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   title = 'AbuPortfolio';
 
   home="assets/home1.png"
+  navimg="assets/navicon.png"
   primage = "assets/Spinner-5.gif"
   ngOnInit():any{
       Aos.init();  
@@ -20,6 +21,11 @@ export class AppComponent implements OnInit {
       let pre = document.getElementById('preloader');
       window.addEventListener("load",function(){
         pre!.style.display="none";
+      })
+
+      let menu = document.querySelector(".burger-menu");
+      menu?.addEventListener("click",()=>{
+        menu?.classList.toggle("active");
       })
 
   }

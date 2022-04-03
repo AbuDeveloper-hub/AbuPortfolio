@@ -8,18 +8,29 @@
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    .left{
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .bottom{
         color: white;
         text-align: center;
+        padding-top: 10px;
         .name{
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
         }
         .position{
             font-size: 24px;
         }
         .sm-media{
-            padding: 20px;
+            padding: 10px;
             .fa {
                 padding: 10px;
                 text-align: center;
@@ -60,13 +71,7 @@
             background-color: white;
         }
     }
-    .right{
-        img{
-            object-fit: cover;
-            height: 400px;
-            width: 400px;
-        }
-    }
+
 }
 
 #myvid {
@@ -84,8 +89,8 @@
 
         height: auto;
         text-align: center;
-        .left{
-            padding: 10px;
+        .bottom{
+
             .name{
                 font-size: 30px;
                 font-weight: bold;
@@ -94,11 +99,11 @@
                 font-size: 20px;
             }
         }
-        .right{
-            padding: 20px;
+        .top{
+            margin-top: 30px;
             .img{
-                height: 200px;
-                width: 200px;
+                height: 150px;
+                width: 150px;
             }
             
         }
