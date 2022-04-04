@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     Aos.init()
     var typed = new Typed('.element', {
-      strings: ['I am a Front-End Developer.', 'Java Developer.'],
+      strings: ['I am a Front-End Developer.', 'I am a Java Developer.'],
       typeSpeed:20,
       backSpeed:20,
       loop: true,
